@@ -21,4 +21,9 @@ else:
         message += ". Consider completing it when you have free time."
 
 # Output the final reminder
-print(message)
+if priority in ["high", "medium", "low"]:
+    print(f"Reminder: {message}")
+else:
+    print(f"Note: {message}")
+
+
